@@ -11,14 +11,6 @@
 using namespace std;
 using namespace chrono;
 
-/*
- =========================================================
-  NxN Matrix Multiplication - BENCHMARK (1..15 threads)
-  Sequential / std::thread / OpenMP
-  B -> Bt (transpose) for better cache locality
- =========================================================
-*/
-
 static void init_matrix(vector<vector<float>>& M, int N) {
     mt19937 gen(42);
     uniform_real_distribution<float> dist(0.0f, 1.0f);
